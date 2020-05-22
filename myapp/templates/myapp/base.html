@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- seo properties -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="description" content="Data Analytics Freelancer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+        content="Freelancer | Data Analytics | Data Visualization | Data Science | Asela Dassanayake" />
+    <meta property="og:description" content="Data Analytics Freelancer" />
+    <meta property="og:url" content="https://aseladass.com/">
+    <meta property="og:site_name" content="aseladass">
+    <meta property="og:image" content="https://aseladass.com/assets/images/social.png" />
+    <link rel="canonical" href="https://aseladass.com/" />
+
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/main.css' %}">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <title>Freelancer | Data Analyics | Data Visualization | Data Science | Asela Dassanayake</title>
+
+</head>
+
+
+<body>
+
+    <!-- navigation section -->
+    <div class="menu-area">
+
+        <div class="menu-items">
+            <a onclick="hi()">Projects</a>
+        </div>
+
+        <div class="menu-items">
+            <a href="{% url 'blog' %}"> Blog</a>
+        </div>
+
+        <div class="menu-items">
+            <img class="logo-header" src="{% static 'myapp/assets/images/graphics/logo-asela-03.svg' %}" alt="">
+        </div>
+
+        <div class="menu-items">
+            About Me
+        </div>
+
+        <div class="menu-items">
+            Contact
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+        <div class="footer-items">
+            <span>© </span>Copyright 2020
+        </div>
+
+        <div class="footer-items">
+            <a href="">Linkdin</a>
+        </div>
+
+    </div>
+
+
+    <!-- drop down menu -->
+    <div id="myDiv" style="display: none;">
+        <a href="">data viz</a>
+        <a href="">statistical labs</a>
+        <a href="">writing</a>
+    </div>
+
+
+    <!-- css -->
+    <script type='text/javascript' src="{% static 'myapp/js/dropdown.js' %}"></script>
+
+
+
+</body>
+
+</html>

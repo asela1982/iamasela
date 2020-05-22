@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- container section -->
+    <div class="container">
+        {% for article in article_list %}
+        <div class="container-items">
+            <h1>{{article.name}}</h1>
+            <p>{{article.description}}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,114 @@
+
+// color palette
+.colorpalette{
+    //Rich and Colorful: https://digitalsynopsis.com/design/website-color-schemes-palettes-combinations/
+    background-color: #f78888;
+    background-color: #f3d250;
+    background-color: #ececec;
+    background-color: #90ccf4;
+    background-color: #5da2d5;
+}
+
+    
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+    border: 1px solid red;
+    background-color: #ECECEC;
+}
+
+// main sections in home page
+.menu-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    font-family: 'Nanum Pen Script', cursive;
+    border: 5px solid blue;
+    
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    font-family: 'Bangers', cursive;
+    border: 5px solid green;
+    overflow: hidden;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f3d250;
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border: 5px solid orchid;
+}
+
+
+.menu-items{
+    border: 5px dashed pink;
+    margin: 1vh;
+}
+
+
+.container-items{
+    border: 5px dashed skyblue;
+    margin: 1vh;
+}
+
+
+.footer-items{
+    border: 5px dashed orchid;
+    margin: 1vh;
+}
+
+
+.drop-down-items{
+    border: 5px dashed orchid;
+    margin: 1vh;
+}
+
+
+// header-nav-dropdow sections in home page
+.menu-area-project{
+    background-color: green;
+    border: 7px dashed red;
+}
+
+
+
+.tuk{
+    animation-name: drive;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive{
+    from{transform: translateX(-10vw)}
+    to{transform: translateX(+110vw)}
+}
+
+.logo-header{
+    height: 10vh;
+}
+
+.test{
+    display: inline;
+    border: 2px solid red;
+}
